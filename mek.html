@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mekdi's portfolio </title>
+    <style>
+     * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: #12c8e0;
+            color: #0f172a;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        section {
+            padding: 80px 10%;
+            min-height: 60vh;
+            background-color: #cbd5e1;
+        }
+        header {
+            background-color: #47cdd6;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(224, 18, 18, 0.1);
+        }
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        .mek-link {
+            text-decoration: none;
+            color: #bb7fbd;
+            font-weight: 600;
+            transition: 0.3s;
+            position: relative;
+        }
+        .mek-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #09929c;
+            transition: 0.3s;
+        }
+        .mek-link:hover {
+            color: #098b9c;
+        }
+        .mek-link:hover::after {
+            width: 100%;
+        }
+        .about{
+            background-color: #26b47e;
+        }
+        .service{
+            background-color: #bb7fbd;
+        }
+        #home {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 120px;
+        }
+        .contact-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #098b9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s;
+        }
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(9, 139, 156, 0.4);
+        }
+        .skill-items {
+            margin-bottom: 20px;
+        }
+        .skill-bars{
+            background-color:rgb(109, 194, 12) ;
+        }
+        .progress-bar {
+            background: #e2e8f0;
+            border-radius: 10px;
+            height: 12px;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        .progress {
+            background: #098b9c;
+            height: 100%;
+            width: 0; 
+            transition: width 1.5s ease-in-out;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin-top: 20px;
+            padding: 2px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+        }
+
+        .send-btn {
+            background: #0f172a;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .send-btn:hover {
+            background: #334155;
+        }
+
+        #scrollTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #98c0c5;
+            color: rgb(94, 146, 103);
+            padding: 15px;
+            border-radius: 50%;
+              cursor: pointer;
+            display: none; 
+            border: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .contact{
+            background-color: #26b47e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #0f172a;
+            color: white;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4b060f;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <ul>
+            <li><a href="#home" class="mek-link">HOME</li>
+            <li><a href="#about" class="mek-link">ABOUT</li>
+            <li><a href="#service" class="mek-link">SERVICE</a></li>  
+            <li><a href="#skill" class="mek-link" >SKILL</a></li>
+            <li><a href="#contact" class="mek-link">CONTACT</a></li>
+        </ul>
+    </nav>
+   </header>
+<section id="home" class="mek">
+    <h3> HELLO, I AM </h3>
+    <h1>MEKDELAWIT MULUKEN</h1>
+    <marquee><P> I AM G11 WEBDESIGN & DEVELOPMENT STUDENT </P></marquee>
+    <a href="#contact" class="contact-btn">📬CONTACT</a>
+</section>
+ <div class="hero-image">
+                <i class="fas fa-laptop-code avatar-icon"></i>
+            </div>
+<section id="about" class="about">    
+    <div class="container">
+            <div class="section-title"><span><h1>ABOUT ME</h1></span></div>
+            <div class="about-card">
+                <div class="image-gallery">
+                    <img src="MEK.jpg.JPG" alt="mekdi" class="profile-img" >
+                </div>
+                <p>Hi, my name is MEKDELAWIT MULUKEN. I am a Web Design and Development student from grade 11. I didn't have  my own any account, for now I will put on my friends account . In the coming times I wanna to create my own account. I'm passionated in listening each other,designing clothes & writing poem.</p>
+                <a href="https://www.Telegram.com/@Eldanahs" target="_blank" class="telegram-link">
+                    <i class="fab fa-telegram"></i> Click here to look at my friend's  Telegram account
+                </a>
+</section>
+<section id="service" class="service">
+        <h1> MY SERVICES</h1>
+         <div class="go">
+     <h3>LISTENING </h3>
+     <p>I can listen people that they want to speak </p>
+     </div>
+      <div class="go">
+     <h3>DESIGNING</h3>
+     <P>Ican design clothes that are not working properly  </P>
+      </div>
+       <div class="go">
+      <h3>WRITING POEM</h3>
+      <p>I can write poem when I am sad</p>
+    </div>
+    </section>
+    <section id="skill">
+       <div id="skill-title">
+        <h1>MY CREATIVE SKILL</h1>
+    </div>
+       <p>I can listen some one who can speak with me in bad time,I can design clothes ,and writem poem</p>
+       <button class="read-more-btn" id="readmorebtn">READ MORE</button>
+    </section>
+    <section class="skill-bars">
+    <div class="skill-items">
+        <div class="skill-info"><span>LISTENING </span> 90%</div>
+        <div class="progress-bar"><div class="progress" data-width="90%"></div>
+    </div>
+    <div class="skill-items">
+       <div class="skill-info" ><span>DESINING</span>80%</div>
+       <div class="progress-bar"><div class="progress" data-width="80%"></div>
+    </div>
+    <div class="skill-items">
+        <div class="skill-info"><span>WRITING POEM</span>70%</div>
+        <div class="progress-bar"><div class="progress" data-width="70%"></div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="contact"  style="background-color: rgb(41, 101, 109);">
+        <div class="container">
+            <div class="section-title"><span>Contact Me</span></div>
+            <div class="contact-row">
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 20px;">Send a Message</h3>
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Your name" required>
+                        <input type="email" id="email" placeholder="Your email address" required>
+                        <input type="text" id="subject" placeholder="Your subject" required>
+                        <textarea id="message" rows="4" placeholder="Message" required></textarea>
+                        <button type="submit" class="send-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    </div>
+                    </div>
+                    </div>
+                    <div id="formFeedback" style="margin-top: 12px; font-weight: 500;"></div>
+                </div>
+                <div class="contact-info">
+                <p class="contact">📍 Address: Addis Ababa, Ethiopia</p>
+                <p class="contact">📱 +251-993-64-36-28</p>
+                <div class="support-text">please contact me if you want to speak,I'll hear you!</div>
+            </div>
+        </div>
+    </section>
+     <button id="scrollTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <footer>
+        <div class="footer">
+        <p>&copy; Mekdelawit Muluken 2026 . All Right Reserved</p>
+        </div>
+    </footer>
+<script>
+     window.addEventListener('scroll', () => {
+            const progressBars = document.querySelectorAll('.progress');
+            progressBars.forEach(bar => {
+                const rect = bar.getBoundingClientRect();
+                if(rect.top < window.innerHeight) {
+                    bar.style.width = bar.getAttribute('data-width');
+                }
+            });
+        });
+        const readMoreBtn = document.getElementById('readmorebtn');
+        const extraText = document.getElementById('extraText');
+        readMoreBtn.addEventListener('click', () => {
+            if (extraText.style.display === "none") {
+                extraText.style.display = "block";
+                readMoreBtn.innerText = "READ LESS";
+            } else {
+                extraText.style.display = "none";
+                readMoreBtn.innerText = "READ MORE";
+            }
+        });
+        const topBtn = document.getElementById("scrollTop");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+        topBtn.addEventListener('click', () => {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const feedback = document.getElementById('formFeedback');
+            feedback.innerHTML = "Thank you! Your message has been sent successfully.";
+            feedback.style.color = "lightgreen";
+            this.reset();
+        });
+    </script>
+</body>
+</html>
